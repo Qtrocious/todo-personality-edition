@@ -1,0 +1,28 @@
+:root {
+    margin: 0px;
+    padding: 0px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.list {
+    display: inline-flex;
+    align-items: center;
+    align-content: center;
+    gap: 12px; 
+    border: 2px solid rgb(255, 255, 255);
+    width: 50rem;
+}
+
+
+
+.task { 
+    transition: color .5s;
+}
+
+
+input[type="checkbox"]:checked + .task {
+    color:#61cf5a;
+    text-decoration: line-through;
+    opacity: .7;
+}
